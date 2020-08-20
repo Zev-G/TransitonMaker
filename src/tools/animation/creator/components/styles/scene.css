@@ -1,0 +1,18 @@
+.root {
+    -fx-accent: transparent;
+
+    -fx-focus-color: transparent;
+}
+
+.context-menu {
+    -fx-background-color: #1e2f47;
+    -fx-text-fill: #6895d4;
+}
+
+.menu-item .label {
+    -fx-text-fill: #6895d4;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #80b5ff;
+}

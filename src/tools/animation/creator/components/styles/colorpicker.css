@@ -1,0 +1,105 @@
+* {
+    -red: #b94646;
+    -dark-gray: #272a35;
+    -dark-blue: #1e2f47;
+    -light-blue: #425e85;
+}
+
+
+.color-picker.split-button > .arrow-button  {
+    -fx-background-color: -dark-blue;
+    -fx-background-insets: 1 1 1 0, 1, 2;
+    -fx-background-radius: 0 3 3 0, 0 2 2 0, 0 1 1 0;
+}
+.color-picker.split-button:focused > .arrow-button {
+    /*-fx-background-color: -fx-focus-color, -fx-inner-border, -fx-body-color !important;*/
+    /*-fx-background-insets: 0, 1, 2;*/
+    -fx-background-color: -dark-blue;
+    -fx-background-insets: 1 1 1 0, 1, 2, 1, 2.6;
+    -fx-background-radius: 0 3 3 0, 0 2 2 0, 0 1 1 0, 0 1 1 0, 0 1 1 0;
+}
+.color-picker.split-button > .arrow-button {
+    /*-fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color !important;*/
+    -fx-padding: 0.5em 0.667em 0.5em 0.667em; /* 6 8 6 8 */
+}
+.color-picker > .color-picker-label > .picker-color > .picker-color-rect {
+    -fx-stroke: -fx-box-border;
+}
+
+.color-palette {
+    -fx-spacing: 0.833333em; /* 10px */
+    -fx-background-color: -light-blue;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 6, 5;
+    -fx-padding: 1em; /* 12 */
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 12, 0.0 , 0 , 8 );
+}
+.color-palette > .color-picker-grid {
+    -fx-padding: 0.5px;
+    -fx-snap-to-pixel: false;
+}
+.color-palette > .color-picker-grid > .color-square {
+    -fx-background-color: transparent;
+    -fx-padding: 0.5px;
+}
+/* the color over which the user is hovering */
+.color-palette-region > .color-square.hover-square {
+    -fx-background-color: -dark-blue;
+    -fx-background-insets: -3,-1;
+    -fx-background-radius: 5,0;
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
+    -fx-border-color: -dark-gray;
+    -fx-border-insets: -1, -1;
+}
+/* ------- CUSTOM COLOR DIALOG ------- */
+
+.custom-color-dialog .color-rect-pane .color-rect-border {
+    -fx-border-color: -dark-gray;
+}
+
+.custom-color-dialog > .color-rect-pane #color-rect-indicator {
+    -fx-background-color: null;
+    -fx-border-color: -light-blue;
+    -fx-border-radius: 0.4166667em;
+    -fx-translate-x: -0.4166667em;
+    -fx-translate-y: -0.4166667em;
+    -fx-pref-width: 0.833333em;
+    -fx-pref-height: 0.833333em;
+    -fx-effect: dropshadow(three-pass-box, black, 2, 0.0, 0, 1);
+}
+
+.custom-color-dialog > .color-rect-pane > .color-bar {
+    -fx-min-width: 1.666667em;
+    -fx-min-height: 16.666667em;
+    -fx-max-width: 1.666667em;
+    -fx-border-color: -dark-gray;
+}
+
+.custom-color-dialog > .color-rect-pane > .color-bar > #color-bar-indicator {
+    -fx-border-radius: 0.333333em;
+    -fx-border-color: -light-blue;
+    -fx-effect: dropshadow(three-pass-box, black, 2, 0.0, 0, 1);
+    -fx-pref-width: 2em;
+    -fx-pref-height: 0.833333em;
+    -fx-translate-x: -0.1666667em;
+    -fx-translate-y: -0.4166667em;
+}
+
+.custom-color-dialog  {
+    -fx-background-color: -dark-blue;
+    -fx-padding: 1.25em;
+    -fx-spacing: 1.25em;
+}
+.custom-color-dialog .controls-pane .current-new-color-grid #current-new-color-border {
+    -fx-border-color: -light-blue;
+    -fx-border-width: 2px;
+}
+
+.custom-color-dialog .controls-pane .customcolor-controls-background {
+    -fx-background-color: -dark-blue;
+    -fx-background-insets:
+            0.8333333em 0 0.4166667em 0,
+            1em 0.166667em 0.5833333em 0.166667em;
+    -fx-background-radius: 0.3333333em, 0.166667em;
+}
