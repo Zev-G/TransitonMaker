@@ -1,6 +1,6 @@
 # JavaFX Transition Maker
 
-JavaFX Transition Maker is an application made to help people create pretty JavaFX.
+JavaFX Transition Maker is an application made to help people create pretty JavaFX transitions which they can then deploy into their very own creations.
 
 ### Install
 Nothing here yet
